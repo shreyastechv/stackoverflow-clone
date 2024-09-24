@@ -64,8 +64,10 @@ header {
 }
 
 aside {
+	//display: flex;
 	font-size: 14px;
 	flex: 0 0 180px;
+	//flex-flow: column;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100vh;
@@ -76,6 +78,7 @@ aside {
 
 .container {
 	max-width: min(96%, 1140px);
+	//justify-content: space-around;
 }
 
 .top-line {
@@ -91,20 +94,26 @@ aside {
 .primary-nav {
 	display: flex;
 	align-items: center;
+	//overflow: hidden;
+}
+
+.primary-nav > * {
+	//float: left;
 }
 
 .nav-links {
+	//position: right;
 	display: flex;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	align-self: flex-end;
 }
 
 .nav-links a {
 	margin-left: 5px;
 	width: 70px;
 	text-align: center;
+	//float: right;
 }
 
 .nav-links a:first-child {
@@ -113,6 +122,7 @@ aside {
   
 .nav-link {
 	text-decoration: none;
+	//font-size: 1.25rem;
 }
 
 .login-link {
@@ -160,19 +170,23 @@ aside {
 }
 /*
 .sidenav {
-	height: 100%;
-	width: 360px;
-	z-index: 1;
-	top: 1;
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 360px; /* Set the width of the sidebar */
+	//position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 1; /* Stay at the top */
 	left: 0;
-	background-color: black;
-	overflow-x: hidden;
+	background-color: black; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 20px;
 }
 */
 
 .mini-spacer {
+	//height: 100vh;
 	border: 1px solid red;
+	//display: flex;
+	//flex-flow: column;
 }
 
 .mini-spacer p a {
@@ -184,8 +198,18 @@ aside {
 	text-align: right;
 }
 
+.spacer {
+	//height: 1000px;
+}
+/*
+main {
+	margin-left: 360px;
+}
+*/
+
 main {
 	flex: 5;
+	//background: lightblue;
 	overflow-y: auto;
 	margin: 25px;
 }
@@ -299,6 +323,7 @@ footer {
 }
 
 .side-btn {
+//	text-decoration: none;
 	text-align: center;
 	font-size: 11px;
 	display: block;
@@ -320,4 +345,5 @@ footer {
 
 .orange-btn:hover {
 	border: 1px solid transparent;
-	background-color: hsl(26.7deg 86.67% 41.18%);
+	background-color: hsl(26.7deg 86.67% 41.18%);
+}
