@@ -1,0 +1,349 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit; 
+}
+
+html {
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+}
+
+body {
+	display: block;
+	min-height: 100vh;
+	min-height: 100dvh;
+	margin: 0;
+}
+
+.logo {
+	width: 170px;
+}
+
+header {
+	background-color: white;
+	vertical-align: top;
+	position: sticky; /* Apply the sticky positioning */
+	top: 0; /* Stick the element to the top of the viewport */
+	z-index: 100;
+	border-bottom: 0.008rem solid lightgrey;
+}
+
+/*Left navbar items*/
+.navbar-items-left {
+	display: flex;
+	width: 190px;
+}
+
+.navbar-items-left a {
+	font-size: 14px;
+}
+
+/*Search Box*/
+.searchbox {
+	width: 100%;
+	margin: 5px;
+}
+
+.searchbox input {
+	width: 100%;
+	height: 30px;
+	border-radius: 6px;
+	border: 1px solid lightgrey;
+	padding: 5px;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+}
+
+aside {
+	//display: flex;
+	font-size: 14px;
+	flex: 0 0 180px;
+	//flex-flow: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 100vh;
+	padding: .5em;
+	padding-left: 45px;
+	border-right: 0.008rem solid lightgrey;
+}
+
+.container {
+	max-width: min(96%, 1140px);
+	//justify-content: space-around;
+}
+
+.top-line {
+	height: 3px;
+	width: 100%;
+	border-width: 0;
+	background-color: #ff7700;
+	position: sticky;
+ 	top: 0;
+	overflow: hidden;
+}
+
+.primary-nav {
+	display: flex;
+	align-items: center;
+	//overflow: hidden;
+}
+
+.primary-nav > * {
+	//float: left;
+}
+
+.nav-links {
+	//position: right;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links a {
+	margin-left: 5px;
+	width: 70px;
+	text-align: center;
+	//float: right;
+}
+
+.nav-links a:first-child {
+	margin-left: 0;
+}
+  
+.nav-link {
+	text-decoration: none;
+	//font-size: 1.25rem;
+}
+
+.login-link {
+	color: rgb(27 117 208);
+}
+
+.signup-link {
+	color: white;
+}
+
+.login-btn {
+	border: 1px solid rgb(27 117 208);
+	border-radius: 6px;
+	font-size: 13px;
+	padding: 7px 10px;
+}
+
+.signup-btn {
+	border: 1px solid rgb(27 117 208);
+	background-color: rgb(27 117 208);
+	border-radius: 6px;
+	font-size: 13px;
+	padding: 7px 10px;
+}
+
+.login-btn:hover {
+	background-color: lightblue;
+}
+
+.signup-btn:hover {
+	background-color: darkblue;
+}
+
+.sr-only {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(100%);
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	margin: -1px;
+	white-space: nowrap;
+}
+/*
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 360px; /* Set the width of the sidebar */
+	//position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 1; /* Stay at the top */
+	left: 0;
+	background-color: black; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+}
+*/
+
+.mini-spacer {
+	//height: 100vh;
+	border: 1px solid red;
+	//display: flex;
+	//flex-flow: column;
+}
+
+.mini-spacer p a {
+	text-decoration: none;
+	color: hsl(210,8%,5%);
+}
+
+.mini-spacer p a i {
+	text-align: right;
+}
+
+.spacer {
+	//height: 1000px;
+}
+/*
+main {
+	margin-left: 360px;
+}
+*/
+
+main {
+	flex: 5;
+	//background: lightblue;
+	overflow-y: auto;
+	margin: 25px;
+}
+
+/* Profile Section */
+.profile-sec-1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.profile-picture {
+	width: 120px;
+	border-radius: 7px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+}
+
+.username {
+	font-weight: normal;
+}
+
+.about-info {
+	font-size: 13px;
+	color: hsl(211.76deg 7.91% 42.16% / 90%);
+}
+
+.overflow-ai-small {
+	width: 10px;
+}
+
+footer {
+	background-color: hsl(210, 8%, 5%);
+	padding: 1.5% 1%;
+	color: lightgrey;
+}
+/*
+.footer-main  {
+	display: flex;
+	flex-direction: row;
+}
+*/
+.footer-main-sub  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-sub p {
+	font-size: 11px;
+}
+
+.footer-logo {
+	width: 50px;
+}
+
+.footer-item {
+	line-height: 1.7;
+}
+
+.footer-heading {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.footer-text {
+	font-size: 13px;
+}
+
+.footer-end {
+	font-size: 12px;
+}
+
+.nobold {
+	font-weight: normal;
+}
+
+.stats-section {
+	padding: 5px;
+	border: 0.05rem solid lightgrey;
+}
+
+.profile-btn {
+	color: white;
+	background-color: rgb(231 112 13);
+	border-radius: 16px;
+	width: 60px;
+	height: 30px;
+	border: none;
+}
+
+.activity-btn {
+	border-radius: 16px;
+	width: 60px;
+	height: 30px;
+	border: none;
+}
+
+.profile-btn:hover {
+	background-color: rgb(162 78 9);
+	cursor: pointer;
+}
+
+.activity-btn:hover {
+	background-color: rgb(227 230 232);
+	cursor: pointer;
+}
+
+.footer-item p a {
+	text-decoration: none;
+	color: white;
+}
+
+.side-btn {
+//	text-decoration: none;
+	text-align: center;
+	font-size: 11px;
+	display: block;
+	padding: 8px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.orange-btn {
+	background-color: hsl(27.25deg 89.34% 47.84%);
+	color: white;
+}
+
+.side-btn:hover {
+	border: 1px solid hsl(212.73deg 8.66% 75.1%);
+	cursor: pointer;
+}
+
+.orange-btn:hover {
+	border: 1px solid transparent;
+	background-color: hsl(26.7deg 86.67% 41.18%);
+}
