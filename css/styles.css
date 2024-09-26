@@ -259,47 +259,6 @@ main {
 	width: 30%;
 }
 
-.bottom-right {
-	width: 70%;
-}
-
-footer {
-	background-color: hsl(210, 8%, 5%);
-	padding: 1.5% 1%;
-	color: lightgrey;
-}
-
-.footer-main-sub  {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.footer-sub p {
-	font-size: 11px;
-}
-
-.footer-logo {
-	width: 50px;
-}
-
-.footer-item {
-	line-height: 1.7;
-}
-
-.footer-heading {
-	font-weight: bold;
-	font-size: 13px;
-}
-
-.footer-text {
-	font-size: 13px;
-}
-
-.footer-end {
-	font-size: 12px;
-}
-
 .section-heading {
 	font-size: 21px;
 	font-weight: normal;
@@ -369,4 +328,45 @@ footer {
 .orange-btn:hover {
 	border: 1px solid transparent;
 	background-color: hsl(26.7deg 86.67% 41.18%);
+}
+
+.bottom-right {
+	width: 20%;
+}
+
+footer {
+	background-color: hsl(210, 8%, 5%);
+	padding: 1.5% 1%;
+	color: lightgrey;
+}
+
+.footer-main-sub  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-sub p {
+	font-size: 11px;
+}
+
+.footer-logo {
+	width: 50px;
+}
+
+.footer-item {
+	line-height: 1.7;
+}
+
+.footer-heading {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.footer-text {
+	font-size: 13px;
+}
+
+.footer-end {
+	font-size: 12px;
 }
