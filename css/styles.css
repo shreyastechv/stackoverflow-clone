@@ -226,6 +226,7 @@ main {
 
 .username {
 	font-weight: normal;
+	margin-top: 4px;
 }
 
 .about-info {
