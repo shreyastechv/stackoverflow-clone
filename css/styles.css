@@ -106,6 +106,15 @@ header {
 	border-right: 0.008rem solid lightgrey;
 }
 
+.sidenav p a {
+	text-decoration: none;
+	color: hsl(210,8%,25%);
+}
+
+.sidenav p a i {
+	text-align: right;
+}
+
 .top-line {
 	height: 3px;
 	width: 100%;
@@ -176,32 +185,6 @@ header {
 
 .signup-btn:hover {
 	background-color: darkblue;
-}
-
-/*
-.sidenav {
-	width: 360px; /* Set the width of the sidebar */
-	//position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 1; /* Stay at the top */
-	left: 0;
-	background-color: black; /* Black */
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
-}
-*/
-
-.sidenav {
-	border: 1px solid red;
-}
-
-.sidenav p a {
-	text-decoration: none;
-	color: hsl(210,8%,25%);
-}
-
-.sidenav p a i {
-	text-align: right;
 }
 
 main {
