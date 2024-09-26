@@ -263,9 +263,18 @@ main {
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
 }
 
+.collectives-section {
+	padding: 10px;
+}
+
 .collective-item {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 20px;
+}
+
+.collective-details {
+	padding: 4px 5px;
 }
 
 .bottom-section {
@@ -275,7 +284,7 @@ main {
 }
 
 .bottom-left {
-	width: 240px;
+	width: 245px;
 	margin-right: 30px;
 }
 
@@ -445,4 +454,14 @@ footer {
 .flex-column {
 	display: flex;
 	flex-direction: column;
+}
+
+.h4 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.h5 {
+	font-size: 12px;
+	font-weight: normal;
 }
