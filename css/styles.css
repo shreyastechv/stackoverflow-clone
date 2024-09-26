@@ -191,16 +191,16 @@ aside {
 }
 */
 
-.mini-spacer {
+aside {
 	border: 1px solid red;
 }
 
-.mini-spacer p a {
+aside p a {
 	text-decoration: none;
 	color: hsl(210,8%,25%);
 }
 
-.mini-spacer p a i {
+aside p a i {
 	text-align: right;
 }
 
