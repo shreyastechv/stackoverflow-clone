@@ -229,6 +229,15 @@ main {
 	align-items: flex-start;
 }
 
+.top-section {
+	display: flex;
+	width: 60vw;
+}
+
+.top-left {
+	width: 900px;
+}
+
 /* Profile Section */
 .profile-sec-1 {
 	display: flex;
@@ -258,9 +267,14 @@ main {
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
 }
 
+.top-right {
+	flex-direction: row-reverse;
+}
+
 .bottom-section {
 	display: flex;
 	flex-direction: row;
+	margin-top: 25px;
 }
 
 .bottom-left {
