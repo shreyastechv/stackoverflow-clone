@@ -96,7 +96,7 @@ header {
 
 .sidenav {
 	font-size: 14px;
-	flex: 0 0 180px;
+	width: 164px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 91vh;
