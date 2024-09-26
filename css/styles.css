@@ -24,7 +24,12 @@ body {
 .logo {
 	width: 157px;
 	padding: 0 auto;
-	margin-top: 2px;
+	//margin-top: 2px;
+	border-radius: 4px;
+}
+
+.logo:hover {
+	filter: brightness(87%);
 }
 
 header {
@@ -61,17 +66,17 @@ header {
 /*Search Box*/
 .searchbox {
 	width: 100%;
-	//margin: 2px 6px;
 	margin-left: 20px;
 	margin-right: 6px;
 }
 
 .searchbox input {
+	color: hsl(210,8%,25%);
 	width: 100%;
-	height: 34px;
+	height: 33px;
 	border-radius: 6px;
 	border: 1px solid lightgrey;
-	padding: 5px;
+	padding: 4px;
 }
 
 .content {
@@ -80,15 +85,14 @@ header {
 }
 
 aside {
-	//display: flex;
 	font-size: 14px;
 	flex: 0 0 180px;
-	//flex-flow: column;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 100vh;
+	height: 91vh;
 	padding: .5em;
-	//padding-left: 45px;
+	position: sticky;
+	top: 50px;
 	border-right: 0.008rem solid lightgrey;
 }
 
@@ -105,13 +109,11 @@ aside {
 .primary-nav {
 	display: flex;
 	align-items: center;
-	//overflow: hidden;
 	max-width: 1280px;
-	//justify-content: flex-start;
 }
 
 .nav-links {
-	//position: right;
+
 	display: flex;
 	list-style: none;
 	margin: 0;
@@ -127,7 +129,6 @@ aside {
 	width: 65px;
 	height: 32px;
 	text-align: center;
-	//float: right;
 	align-self: center;
 }
 
@@ -169,7 +170,6 @@ aside {
 
 /*
 .sidenav {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
 	width: 360px; /* Set the width of the sidebar */
 	//position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
@@ -182,10 +182,7 @@ aside {
 */
 
 .mini-spacer {
-	//height: 100vh;
 	border: 1px solid red;
-	//display: flex;
-	//flex-flow: column;
 }
 
 .mini-spacer p a {
@@ -197,13 +194,8 @@ aside {
 	text-align: right;
 }
 
-.spacer {
-	//height: 1000px;
-}
-
 main {
 	flex: 5;
-	//background: lightblue;
 	overflow-y: auto;
 	margin: 25px;
 	align-items: flex-start;
@@ -216,7 +208,7 @@ main {
 }
 
 .profile-picture {
-	width: 120px;
+	width: 128px;
 	border-radius: 7px;
 	margin-right: 14px;
 	margin-bottom: 14px;
@@ -240,12 +232,7 @@ footer {
 	padding: 1.5% 1%;
 	color: lightgrey;
 }
-/*
-.footer-main  {
-	display: flex;
-	flex-direction: row;
-}
-*/
+
 .footer-main-sub  {
 	display: flex;
 	flex-direction: row;
@@ -318,7 +305,6 @@ footer {
 }
 
 .side-btn {
-//	text-decoration: none;
 	text-align: center;
 	font-size: 11px;
 	display: block;
@@ -342,10 +328,4 @@ footer {
 	border: 1px solid transparent;
 	background-color: hsl(26.7deg 86.67% 41.18%);
 }
-/*
-@media (min-width: 1280px) {
-	.primary-nav {
-		margin: auto 1vw;
-	}
-}
-*/                                                                   
+                                                         
