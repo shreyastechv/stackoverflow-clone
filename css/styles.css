@@ -94,7 +94,7 @@ header {
 	display: flex;
 }
 
-aside {
+.sidenav {
 	font-size: 14px;
 	flex: 0 0 180px;
 	overflow-x: hidden;
@@ -191,16 +191,16 @@ aside {
 }
 */
 
-aside {
+.sidenav {
 	border: 1px solid red;
 }
 
-aside p a {
+.sidenav p a {
 	text-decoration: none;
 	color: hsl(210,8%,25%);
 }
 
-aside p a i {
+.sidenav p a i {
 	text-align: right;
 }
 
