@@ -255,6 +255,14 @@ main {
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
 }
 
+.bottom-left {
+	width: 30%;
+}
+
+.bottom-right {
+	width: 70%;
+}
+
 footer {
 	background-color: hsl(210, 8%, 5%);
 	padding: 1.5% 1%;
@@ -292,8 +300,14 @@ footer {
 	font-size: 12px;
 }
 
-.nobold {
+.section-heading {
+	font-size: 21px;
 	font-weight: normal;
+}
+
+.rounded-section {
+	border-radius: 2px;
+	border: 1px solid grey;
 }
 
 .stats-section {
@@ -356,4 +370,3 @@ footer {
 	border: 1px solid transparent;
 	background-color: hsl(26.7deg 86.67% 41.18%);
 }
-                                                         
