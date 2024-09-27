@@ -215,7 +215,7 @@ header {
 
 main {
 	display: flex;
-	max-width: 1035px;
+	max-width: 1078px;
 	flex-direction: column;
 	flex: 5;
 	overflow-y: auto;
@@ -225,7 +225,7 @@ main {
 
 .top-section {
 	display: flex;
-	width: 60vw;
+	width: 100%;
 }
 
 .top-left {
@@ -385,6 +385,18 @@ main {
 .orange-btn:hover {
 	border: 1px solid transparent;
 	background-color: hsl(26.7deg 86.67% 41.18%);
+}
+
+.profile-toggle {
+	font-size: 12px;
+	width: 80px;
+	height: 40px;
+	border: 1px solid hsl(0deg 0% 79.53%);
+	border-radius: 5px;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .bottom-font {
