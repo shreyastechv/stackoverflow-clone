@@ -518,6 +518,14 @@ main {
 	display: flex;
 }
 
+.top-tags-item, .top-tags-item-left, .top-tags-item-right {
+	display: flex;
+}
+
+.top-tags-item {
+	justify-content: space-between;
+}
+
 footer {
 	background-color: hsl(210, 8%, 5%);
 	padding: 1.5% 1%;
