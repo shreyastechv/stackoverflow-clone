@@ -277,6 +277,46 @@ main {
 	padding: 4px 5px;
 }
 
+.community-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.comm-subtitle {
+	font-size: 13px;
+	margin-right: 8px;
+}
+
+.community-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.community-item {
+	display: flex;
+	flex-direction: row;
+}
+
+.community-item img {
+	width: 23px;
+	margin: 3px;
+}
+
+.community-item a, .community-item p {
+	font-size: 13px;
+}
+
+.community-item a {
+	text-decoration: none;
+	color: hsl(210,77%,36%);
+}
+
+.community-item p {
+	//margin-left: 90px;
+	color: hsl(210,8%,42%)
+}
+
 .bottom-section {
 	display: flex;
 	flex-direction: row;
@@ -373,7 +413,7 @@ main {
 }
 
 .bottom-right {
-	width: 780px;
+	width: 760px;
 }
 
 .about-section {
@@ -407,6 +447,75 @@ main {
 
 .about-bold {
 	font-weight: bold;
+}
+
+.badges-heading {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.badges-heading p {
+	font-size: 13px;
+}
+
+.badges-content {
+	display: flex;
+}
+
+.badge-item {
+	padding: 12px;
+	margin: 11px;
+	width: 33%;
+}
+
+.badge-item-header {
+	display: flex;
+	//flex-direction: column;
+}
+
+.badge-container p:first-child {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.badge-container p {
+	font-size: 12px;
+	margin: auto 8px;
+}
+
+.badge-item-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.badge-item-row a {
+	font-size: 11px;
+	padding: 4px 8px;
+	border: 1px solid hsl(210,8%,90%);
+	border-radius: 5px;
+	background-color: #efefef;
+}
+
+.badge-item-row p {
+	font-size: 11px;
+}
+
+.top-tags-heading {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.top-tags-heading p {
+	font-size: 13px;
+}
+
+.top-tags-content {
+	display: flex;
 }
 
 footer {
@@ -463,5 +572,21 @@ footer {
 
 .h5 {
 	font-size: 12px;
-	font-weight: normal;
+ 	font-weight: normal;
+}
+
+.dot {
+	font-size: 6px;
+}
+
+.gold {
+	color: #ffcc81;
+}
+
+.silver {
+	color: hsl(210deg 8% 25% / 47%);
+}
+
+.bronze {
+	color: hsl(20deg 81.25% 38.66% / 55%);
 }
