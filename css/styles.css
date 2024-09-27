@@ -22,9 +22,14 @@ body {
 }
 
 .logo {
-	width: 157px;
-	padding: 0 auto;
-	margin-top: 2px;
+	width: 154px;
+	margin: 2px 10px;
+	//margin-top: 3px;
+	border-radius: 4px;
+}
+
+.logo:hover {
+	filter: brightness(87%);
 }
 
 header {
@@ -60,36 +65,28 @@ header {
 
 /*Search Box*/
 .searchbox {
+	display: flex;
+	align-items: center;
 	width: 100%;
-	//margin: 2px 6px;
 	margin-left: 20px;
 	margin-right: 6px;
+	height: 33px;
+	border-radius: 6px;
+	border: 1px solid lightgrey;
+	padding: 4px;
+}
+
+.search-icon {
+	padding: 3px;
 }
 
 .searchbox input {
+	color: hsl(210,8%,25%);
 	width: 100%;
-	height: 34px;
-	border-radius: 6px;
-	border: 1px solid lightgrey;
-	padding: 5px;
-}
-
-.content {
-	flex: 1;
-	display: flex;
-}
-
-aside {
-	//display: flex;
-	font-size: 14px;
-	flex: 0 0 180px;
-	//flex-flow: column;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	height: 100vh;
-	padding: .5em;
-	//padding-left: 45px;
-	border-right: 0.008rem solid lightgrey;
+	border: none;
+	//outline: none;
+	padding: 3px;
+	//margin: 15px auto 15px;
 }
 
 .top-line {
@@ -105,13 +102,12 @@ aside {
 .primary-nav {
 	display: flex;
 	align-items: center;
-	//overflow: hidden;
 	max-width: 1280px;
-	//justify-content: flex-start;
+	margin-left: 2%;
 }
 
 .nav-links {
-	//position: right;
+
 	display: flex;
 	list-style: none;
 	margin: 0;
@@ -127,7 +123,6 @@ aside {
 	width: 65px;
 	height: 32px;
 	text-align: center;
-	//float: right;
 	align-self: center;
 }
 
@@ -167,46 +162,80 @@ aside {
 	background-color: darkblue;
 }
 
-/*
+.content {
+	flex: 1;
+	display: flex;
+}
+
 .sidenav {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 360px; /* Set the width of the sidebar */
-	//position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 1; /* Stay at the top */
-	left: 0;
-	background-color: black; /* Black */
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
-}
-*/
-
-.mini-spacer {
-	//height: 100vh;
-	border: 1px solid red;
-	//display: flex;
-	//flex-flow: column;
+	font-size: 13px;
+	width: 212px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 91vh;
+	padding: .5em;
+	padding-left: 52px;
+	position: sticky;
+	top: 50px;
+	border-right: 0.008rem solid lightgrey;
 }
 
-.mini-spacer p a {
+.sidenav p {
+	padding: 10px 1px;
+	align-items: center;
+}
+
+.sidenav p a {
 	text-decoration: none;
 	color: hsl(210,8%,25%);
+	//margin: 10px auto;
 }
 
-.mini-spacer p a i {
-	text-align: right;
+.sidenav p:first-child {
+	margin-top: 23px;
 }
 
-.spacer {
-	//height: 1000px;
+.sidenav p:nth-child(4) {
+	background-color: #e9e9e9;
+}
+
+.sidenav p:nth-child(4), .sidenav p:nth-child(6) {
+	margin-top: 25px;
+}
+
+.sidenav p a i {
+	padding-right: 8px;
+}
+
+.spacing {
+	padding-right: 80px;
+}
+
+.collectives-span {
+	margin: auto 18px;
+}
+
+.overflow-ai-small {
+	width: 130px;
 }
 
 main {
+	display: flex;
+	max-width: 1035px;
+	flex-direction: column;
 	flex: 5;
-	//background: lightblue;
 	overflow-y: auto;
 	margin: 25px;
 	align-items: flex-start;
+}
+
+.top-section {
+	display: flex;
+	width: 60vw;
+}
+
+.top-left {
+	width: 900px;
 }
 
 /* Profile Section */
@@ -216,14 +245,17 @@ main {
 }
 
 .profile-picture {
-	width: 120px;
+	width: 128px;
 	border-radius: 7px;
 	margin-right: 14px;
 	margin-bottom: 14px;
 }
 
 .username {
+	font-size: 34px;
 	font-weight: normal;
+	margin: 4px;
+	margin-bottom: 12px;
 }
 
 .about-info {
@@ -231,59 +263,44 @@ main {
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
 }
 
-.overflow-ai-small {
-	width: 10px;
+.collectives-section {
+	padding: 10px;
 }
 
-footer {
-	background-color: hsl(210, 8%, 5%);
-	padding: 1.5% 1%;
-	color: lightgrey;
-}
-/*
-.footer-main  {
+.collective-item {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 20px;
 }
-*/
-.footer-main-sub  {
+
+.collective-details {
+	padding: 4px 5px;
+}
+
+.bottom-section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	margin-top: 30px;
 }
 
-.footer-sub p {
-	font-size: 11px;
+.bottom-left {
+	width: 245px;
+	margin-right: 30px;
 }
 
-.footer-logo {
-	width: 50px;
-}
-
-.footer-item {
-	line-height: 1.7;
-}
-
-.footer-heading {
-	font-weight: bold;
-	font-size: 13px;
-}
-
-.footer-text {
-	font-size: 13px;
-}
-
-.footer-end {
-	font-size: 12px;
-}
-
-.nobold {
+.section-heading {
+	font-size: 21px;
 	font-weight: normal;
+	margin-bottom: 9px;
 }
 
 .stats-section {
-	padding: 5px;
-	border: 0.05rem solid lightgrey;
+	padding: 10px;
+}
+
+.rounded-section {
+	border: 0.05rem solid #ccc;
+	border-radius: 5px;
 }
 
 .profile-btn {
@@ -312,13 +329,7 @@ footer {
 	cursor: pointer;
 }
 
-.footer-item p a {
-	text-decoration: none;
-	color: white;
-}
-
 .side-btn {
-//	text-decoration: none;
 	text-align: center;
 	font-size: 11px;
 	display: block;
@@ -342,10 +353,115 @@ footer {
 	border: 1px solid transparent;
 	background-color: hsl(26.7deg 86.67% 41.18%);
 }
-/*
-@media (min-width: 1280px) {
-	.primary-nav {
-		margin: auto 1vw;
-	}
+
+.bottom-font {
+	font-size: 13px;
+	color: #666;
 }
-*/                                                                   
+
+.stat-row {
+	display: flex;
+	margin: 15px 0;
+}
+
+.stat-row div {
+	width: 50%;
+}
+
+.trophy-img {
+	width: 25px;
+}
+
+.bottom-right {
+	width: 780px;
+}
+
+.about-section {
+	line-height: 30px;
+	padding: 10px;
+}
+
+.about-section p {
+	font-size: 15px;
+}
+
+.about-section ul li {
+	margin-left: 38px;
+}
+
+.about-section ul ul li {
+	margin-left: 70px;
+}
+
+.about-section ul ul li img {
+	float: left;
+}
+
+.about-link {
+	color: #1b75d0;
+}
+
+.about-section ul li a:visited, .about-section ul ul li a:visited {
+	color: #1b75d0;
+}
+
+.about-bold {
+	font-weight: bold;
+}
+
+footer {
+	background-color: hsl(210, 8%, 5%);
+	padding: 1.5% 1%;
+	color: lightgrey;
+}
+
+.footer-main-sub  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-sub p {
+	font-size: 11px;
+}
+
+.footer-logo {
+	width: 50px;
+}
+
+.footer-item {
+	line-height: 1.7;
+}
+
+.footer-item p a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-heading {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.footer-text {
+	font-size: 13px;
+}
+
+.footer-end {
+	font-size: 12px;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.h4 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.h5 {
+	font-size: 12px;
+	font-weight: normal;
+}
