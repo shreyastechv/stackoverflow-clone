@@ -158,7 +158,8 @@ header {
 }
 
 .content {
-	flex: 1;
+	//flex: 1;
+	max-width: 1310px;
 	display: flex;
 }
 
@@ -195,7 +196,7 @@ header {
 	border-radius: 5px;
 }
 
-.sidenav p:nth-child(4), .sidenav p:nth-child(6) {
+.sidenav p:nth-child(4), .sidenav p:nth-child(6), .sidenav p:nth-child(9) {
 	margin-top: 25px;
 }
 
@@ -217,7 +218,7 @@ header {
 
 main {
 	display: flex;
-	max-width: 1078px;
+	max-width: 1100px;
 	flex-direction: column;
 	flex: 5;
 	overflow-y: auto;
@@ -259,6 +260,10 @@ main {
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
 }
 
+.top-right {
+	margin-left: auto;
+}
+
 .collectives-section {
 	padding: 10px;
 }
@@ -289,6 +294,10 @@ main {
 	flex-direction: column;
 }
 
+.community-section-inside {
+	padding: 12px 8px;
+}
+
 .community-item {
 	display: flex;
 	flex-direction: row;
@@ -309,10 +318,13 @@ main {
 }
 
 .community-item p {
+	margin-left: auto;
+	margin-right: 10px;
 	color: hsl(210,8%,42%)
 }
 
 .bottom-section {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	margin-top: 10px;
@@ -320,7 +332,7 @@ main {
 
 .bottom-left {
 	width: 245px;
-	margin-right: 30px;
+	margin-right: 14px;
 }
 
 .section-heading {
@@ -329,7 +341,7 @@ main {
 	margin-bottom: 9px;
 }
 
-.stats-section {
+.stats-section-inside {
 	padding: 10px;
 }
 
@@ -408,7 +420,11 @@ main {
 
 .stat-row {
 	display: flex;
-	margin: 15px 0;
+	margin-bottom: 15px;
+}
+
+.stat-row:last-child {
+	margin-bottom: 0;
 }
 
 .stat-row div {
@@ -420,12 +436,13 @@ main {
 }
 
 .bottom-right {
-	width: 760px;
+	max-width: 770px;
 }
 
 .about-section {
-	line-height: 30px;
-	padding: 10px;
+	color: hsl(210,8%,25%);
+	line-height: 25px;
+	//padding: 10px;
 }
 
 .about-section p {
@@ -472,9 +489,13 @@ main {
 }
 
 .badge-item {
-	padding: 12px;
-	margin: 11px;
+	padding: 10px;
+	margin-right: 22px;
 	width: 33%;
+}
+
+.badge-item:last-child {
+	margin-right: 0;
 }
 
 .badge-item-header {
@@ -544,7 +565,7 @@ main {
 .top-tags-item-left a {
 	text-decoration: none;
 	font-size: 12px;
-	color: black;
+	color: hsl(210,8%,25%);
 	padding: 4px;
 	margin: 10px;
 	border-radius: 4px;
