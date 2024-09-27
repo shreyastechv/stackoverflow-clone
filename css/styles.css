@@ -570,6 +570,44 @@ main {
 	color: hsl(210,8%,42%);
 }
 
+.top-posts-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 9px;
+	border-bottom: 1px solid #80808059;
+}
+
+.top-posts-item:last-child {
+	border-bottom: none;
+}
+
+.top-posts-item-left {
+	display: flex;
+	align-items: center;
+}
+
+.top-posts-item-left a {
+	font-size: 15px;
+	text-decoration: none;
+	color: hsl(210,77%,46%);
+}
+
+.top-posts-item-left p {
+	color: white;
+	background-color: hsl(148,70%,31%);
+	font-size: 12px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0 8px;
+}
+
+.top-posts-item-right {
+	font-size: 13px;
+	color: hsl(210,8%,42%);
+	display: flex;
+	align-items: center;
+}
+
 footer {
 	background-color: hsl(210, 8%, 5%);
 	padding: 1.5% 1%;
