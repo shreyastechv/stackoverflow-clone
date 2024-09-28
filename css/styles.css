@@ -160,6 +160,8 @@ header {
 	//flex: 1;
 	max-width: 1310px;
 	display: flex;
+	max-width: 1290px;
+	margin: 0 calc(vw - 1280px);
 }
 
 .sidenav {
@@ -168,21 +170,21 @@ header {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 91vh;
-	padding: .5em;
-	padding-left: 52px;
+	padding-left: 44px;
 	position: sticky;
 	top: 50px;
 	border-right: 0.008rem solid lightgrey;
 }
 
 .sidenav p {
-	padding: 7px 1px;
+	padding: 7px 0;
 	align-items: center;
 }
 
 .sidenav p a {
 	text-decoration: none;
 	color: hsl(210,8%,25%);
+	padding-left: 10px;
 }
 
 .sidenav p:first-child {
@@ -191,7 +193,7 @@ header {
 
 .sidenav p:nth-child(4) {
 	background-color: hsl(210,8%,95%);
-	padding: 8px;
+	padding-right: 0;
 	border-radius: 5px;
 }
 
@@ -891,7 +893,6 @@ footer {
 	color: white;
 	background-color: hsl(237,55%,57%);
 	padding: 4px;
-	padding-left: 6px;
 	border: 3px solid hsl(237,78%,93%);
 	border-radius: 60px;
 	width: 31px;
