@@ -79,11 +79,10 @@
 						</div>
 					</div>
 					<div class="top-right">
-						<select name="cars" id="cars">
-							<option value="none">Profiles</option>
-							<option value="meta-user">Meta user</option>
-							<option value="network-profile">Network profile</option>
-						</select>
+						<div class="profile-toggle">
+							<p>Profiles</p>
+							<i class="fa-solid fa-sort-down"></i>
+						</div>
 					</div>
       				</div>
 
@@ -91,7 +90,7 @@
 					<div class="bottom-left">
 						<div class="stats-section">
 							<h2 class="section-heading">Stats</h2>
-							<div class="stats-section rounded-section">
+							<div class="stats-section-inside rounded-section">
 								<div class="stat-row">
 									<div class="reputation-section">
 										<p>1,300,895</p>
@@ -173,8 +172,36 @@
 							</div>
 						</div>
 						<div class="community-section">
-							<h2 class="section-heading">Communities</h2>
-							<div class="community-section">
+							<div class="community-heading">
+								<h2 class="section-heading">Communities</h2>
+								<p class="comm-subtitle">View all <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+							</div>
+							<div class="community-section-inside rounded-section">
+								<div class="community-item">
+									<img src="./assets/images/stackoverflow-logo-tiny.png" alt="">
+									<a href="#">Stack Overflow</a>
+									<p>1.3m</p>
+								</div>
+								<div class="community-item">
+									<img src="./assets/images/eng-and-lang.png" alt="">
+									<a href="#">English Language & Usage</a>
+									<p>14.8k</p>
+								</div>
+								<div class="community-item">
+									<img src="./assets/images/super-user.png" alt="">
+									<a href="#">Super User</a>
+									<p>14.5k</p>
+								</div>
+								<div class="community-item">
+									<img src="./assets/images/meta-stack-exchange.png" alt="">
+									<a href="#">Meta Stack Exchange</a>
+									<p>13.7k</p>
+								</div>
+								<div class="community-item">
+									<img src="./assets/images/server-fault.png" alt="">
+									<a href="#">Server Fault</a>
+									<p>2.8k</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -194,32 +221,360 @@
 							</div>
 						</div>
 						<div class="badges-section">
-							<h2 class="section-heading">Badges</h2>
-							<div class="gold-badges">
+							<div class="badges-heading">
+								<h2 class="section-heading">Badges</h2>
+								<p>View all badges</p>
 							</div>
-							<div class="silver-badges">
-							</div>
-							<div class="bronze-badges">
+							<div class="badges-content">
+								<div class="badge-item rounded-section">
+									<div class="badge-item-header">
+										<img src="./assets/images/golden-badge.png" alt="Golden badge">
+										<div class="badge-container">
+											<p>555</p>
+											<p>golden badges</p>
+										</div>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot gold"></i> clearcase</a>
+										<p>Apr 21, 2012</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot gold"></i> git-submodules</a>
+										<p>Aug 14, 2014</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot gold"></i> bitbucket</a>
+										<p>Aug 12, 2016</p>
+									</div>
+								</div>
+								<div class="badge-item rounded-section">
+									<div class="badge-item-header">
+										<img src="./assets/images/silver-badge.png" alt="Golden badge">
+										<div class="badge-container">
+											<p>4,662</p>
+											<p>golden badges</p>
+										</div>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot silver"></i> msysgit</a>
+										<p>Dec 15, 2012</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot silver"></i> git-submodules</a>
+										<p>Jul 30, 2013</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot silver"></i> bitbucket</a>
+										<p>Jul 31, 2013</p>
+									</div>
+								</div>
+								<div class="badge-item rounded-section">
+									<div class="badge-item-header">
+										<img src="./assets/images/bronze-badge.png" alt="Golden badge">
+										<p></p>
+										<div class="badge-container">
+											<p>5,515</p>
+											<p>golden badges</p>
+										</div>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot bronze"></i> clearcase</a>
+										<p>Aug 17, 2012</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot bronze"></i> git-submodules</a>
+										<p>Sep 20, 2012</p>
+									</div>
+									<div class="badge-item-row">
+										<a><i class="fa-solid fa-circle dot bronze"></i> bitbucket</a>
+										<p>May 8, 2012</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="top-tags-section">
-							<h2 class="section-heading">Top tags</h2>
-							<div class="top-tags-section">
+							<div class="top-tags-heading">
+								<h2 class="section-heading">Top tags</h2>
+								<p>View all tags</p>
+							</div>
+							<div class="top-tags-section rounded-section">
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">git</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">150,037</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">15,846</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">53</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">github</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">34,050</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">5,919</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">20</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">docker</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">16,577</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">1,820</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">6</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">eclipse</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">16,201</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">1,888</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">6</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">version-control</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">14,079</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">1,396</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">5</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
+								<div class="top-tags-item">
+									<div class="top-tags-item-left">
+										<a href="#">go</a>
+										<i class="fa-solid fa-circle dot gold"></i>
+									</div>
+									<div class="top-tags-item-right">
+										<p class="tag-count">10,623</p>
+										<p class="tag-label">score</p>
+										<p class="tag-count">1,208</p>
+										<p class="tag-label">posts</p>
+										<p class="tag-count">4</p>
+										<p class="tag-label">posts %</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="top-posts-section">
-							<h2 class="section-heading">Top posts</h2>
-							<div class="top-posts-section">
+							<div class="top-posts-heading">
+								<h2 class="section-heading">Top posts</h2>
+							</div>
+							<div class="top-posts-section rounded-section">
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>2669</p>
+										<a href="#">How do I remove a submodule?</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Apr 23, 2013</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>2514</p>
+										<a href="#">How to get just one file from another branch</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Mar 2, 2010</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1962</p>
+										<a href="#">How to remove old and unused Docker images</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Sep 22, 2015</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1828</p>
+										<a href="#">Skip Git commit hooks</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Aug 29, 2011</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1768</p>
+										<a href="#">GitHub relative link in Markdown file</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Oct 5, 2011</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1754</p>
+										<a href="#">How to list branches that contain a given commit?</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Sep 14, 2009</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1708</p>
+										<a href="#">Where is the global git config data stored?</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Jan 22, 2010</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1454</p>
+										<a href="#">How to merge a specific commit in Git</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">May 19, 2009</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1373</p>
+										<a href="#">Eclipse/Java code completion not working</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">May 26, 2009</p>
+									</div>
+								</div>
+								<div class="top-posts-item">
+									<div class="top-posts-item-left">
+										<img src="./assets/images/answer-logo.png" alt="Letter A">
+										<p>1356</p>
+										<a href="#">Need to reset git branch to origin version</a>
+									</div>
+									<div class="top-posts-item-right">
+										<p class="post-date">Feb 15, 2012</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="top-meta-posts-section">
-							<h2 class="section-heading">Top Meta posts</h2>
-							<div class="top-meta-posts-section">
+							<div class="top-meta-posts-heading">
+								<h2 class="section-heading">Top Meta posts</h2>
+								<p>View all tags</p>
+							</div>
+							<div class="top-meta-posts-section rounded-section">
+								<div class="top-meta-posts-item">
+									<div class="top-meta-posts-item-left">
+										<img src="./assets/images/stackoverflow-logo-tiny-blackwhite.png" alt="Stackoverflow black and white icon">
+										<p>643</p>
+										<a href="#">Congratulations VonC for reaching a million reputation</a>
+									</div>
+								</div>
+								<div class="top-meta-posts-item">
+									<div class="top-meta-posts-item-left">
+										<img src="./assets/images/stackoverflow-logo-tiny-blackwhite.png" alt="Stackoverflow black and white icon">
+										<p>185</p>
+										<a href="#">What's up with China?</a>
+									</div>
+								</div>
+								<div class="top-meta-posts-item">
+									<div class="top-meta-posts-item-left">
+										<img src="./assets/images/stackoverflow-logo-tiny-blackwhite.png" alt="Stackoverflow black and white icon">
+										<p>138</p>
+										<a href="#">Congratulations BalusC for reaching a million reputation!</a>
+									</div>
+								</div>
+								<div class="top-meta-posts-item">
+									<div class="top-meta-posts-item-left">
+										<img src="./assets/images/stackoverflow-logo-tiny-blackwhite.png" alt="Stackoverflow black and white icon">
+										<p>76</p>
+										<a href="#">Why is there a daily reputation limit of 200 points?</a>
+									</div>
+								</div>
+								<div class="top-meta-posts-item">
+									<div class="top-meta-posts-item-left">
+										<img src="./assets/images/stackoverflow-logo-tiny-blackwhite.png" alt="Stackoverflow black and white icon">
+										<p>41</p>
+										<a href="#">Should we edit a question to transcribe code from an image to text?</a>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="top-nw-posts-section">
-							<h2 class="section-heading">Top network posts</h2>
-							<div class="top-nw-posts-section">
+							<div class="top-nw-posts-heading">
+								<h2 class="section-heading">Top Network posts</h2>
+								<p>View all tags</p>
+							</div>
+							<div class="top-nw-posts-section rounded-section">
+								<div class="top-nw-posts-item">
+									<div class="top-nw-posts-item-left">
+										<img src="./assets/images/super-user.png" alt="Stackoverflow black and white icon">
+										<p>393</p>
+										<a href="#">How do I reset 'master' to 'origin/master'?</a>
+									</div>
+								</div>
+								<div class="top-nw-posts-item">
+									<div class="top-nw-posts-item-left">
+										<img src="./assets/images/super-user.png" alt="Stackoverflow black and white icon">
+										<p>338</p>
+										<a href="#">How to control Windows 7 snap feature with two monitors?</a>
+									</div>
+								</div>
+								<div class="top-nw-posts-item">
+									<div class="top-nw-posts-item-left">
+										<img src="./assets/images/meta-stack-exchange.png" alt="Stackoverflow black and white icon">
+										<p>276</p>
+										<a href="#">How about a "Vote not to close" option to counter the "Vote to close"?</a>
+									</div>
+								</div>
+								<div class="top-nw-posts-item">
+									<div class="top-nw-posts-item-left">
+										<img src="./assets/images/meta-stack-exchange.png" alt="Stackoverflow black and white icon">
+										<p>166</p>
+										<a href="#">Anyone with a "visited: 5555 days, 5555 consecutive" in their profile?</a>
+									</div>
+								</div>
+								<div class="top-nw-posts-item">
+									<div class="top-nw-posts-item-left">
+										<img src="./assets/images/meta-stack-exchange.png" alt="Stackoverflow black and white icon">
+										<p>151</p>
+										<a href="#">Jon Skeet Facts</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
