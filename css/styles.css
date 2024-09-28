@@ -300,6 +300,7 @@ main {
 .community-item {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .community-item img {
@@ -644,7 +645,7 @@ main {
 .top-posts-item {
 	display: flex;
 	justify-content: space-between;
-	padding: 9px;
+	padding: 10px 9px;
 	border-bottom: 1px solid #80808059;
 }
 
@@ -681,13 +682,20 @@ main {
 
 .top-meta-posts-heading {
 	display: flex;
-	align-items: baseline;
 	justify-content: space-between;
-	padding: 0 10px;
 }
 
 .top-meta-posts-heading p {
 	font-size: 13px;
+}
+
+.top-meta-posts-heading-right {
+	display: flex;
+	color: hsl(210,8%,42%);
+}
+
+.top-meta-posts-heading-right > * {
+	margin: 0 2px;
 }
 
 .top-meta-posts-item {
@@ -730,11 +738,14 @@ main {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
-	padding: 0 10px;
 }
 
 .top-nw-posts-heading p {
 	font-size: 13px;
+}
+
+.top-nw-posts-heading p {
+	color: hsl(210,8%,42%);
 }
 
 .top-nw-posts-item {
@@ -828,6 +839,14 @@ footer {
 .h5 {
 	font-size: 12px;
  	font-weight: normal;
+	color: hsl(210,8%,25%);
+}
+
+.recognised-badge-icon {
+	width: 14px;
+	height: 13px;
+	align-self: center;
+	margin-left: 3px;
 }
 
 .dot {
@@ -835,7 +854,7 @@ footer {
 }
 
 .gold {
-	color: #ffcc81;
+	color: #ffbc25;
 }
 
 .silver {
