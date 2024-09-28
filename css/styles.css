@@ -42,8 +42,8 @@ header {
 
 .container {
 	display: flex;
+	width: 100%;
 	justify-content: center;
-	flex-direction: column;
 }
 
 /*Left navbar items*/
@@ -97,8 +97,8 @@ header {
 .primary-nav {
 	display: flex;
 	align-items: center;
-	max-width: 1280px;
-	margin-left: 2%;
+	width: 1280px;
+	margin: 0 calc(vw - 1280px);
 }
 
 .nav-links {
@@ -112,13 +112,12 @@ header {
 
 .nav-links a {
 	text-decoration: none;
-	padding: 4px 2px;
+	padding: 7px 0;
 	font-size: 13px;
-	margin-left: 4px;
-	width: 65px;
-	height: 32px;
+	width: 4rem;
 	text-align: center;
 	align-self: center;
+	margin-left: 4px;
 }
 
 .nav-links a:first-child {
