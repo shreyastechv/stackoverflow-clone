@@ -204,11 +204,11 @@ header {
 }
 
 .spacing {
-	padding-right: 80px;
+	padding-right: 79px;
 }
 
 .collectives-span {
-	margin: auto 18px;
+	margin: auto 13px;
 }
 
 .overflow-ai-small {
@@ -367,6 +367,7 @@ main {
 	width: 60px;
 	height: 30px;
 	border: none;
+	background: none;
 }
 
 .profile-btn:hover {
@@ -594,6 +595,50 @@ main {
 	font-size: 13px;
 	margin-right: 10px;
 	color: hsl(210,8%,42%);
+}
+
+.top-posts-heading {
+	display: flex;
+	padding-bottom: 10px;
+}
+
+.top-posts-heading-left p {
+	font-size: 13px;
+	color: hsl(210,8%,42%);
+}
+
+.top-posts-heading-left p a {
+	color: hsl(210,77%,46%);
+}
+
+.top-posts-heading-right {
+	padding: 20px 0 0 0;
+	margin-left: auto;
+}
+
+.top-posts-heading-right, .top-posts-heading-right div {
+	font-size: 11px;
+	display: flex;
+}
+
+.top-posts-heading-right div {
+	align-items: center;
+}
+
+.top-posts-filter , .top-posts-sort {
+	border: 1px solid rgb(186, 191, 197);
+	border-radius: 5px;
+	margin-left: 8px;
+}
+
+.top-posts-filter div , .top-posts-sort div {
+	padding: 4px 8px;
+	margin: 0 3px;
+}
+
+.top-posts-filter div:first-child , .top-posts-sort div:first-child {
+	background-color: hsl(210,8%,90%);
+	border-radius: 5px;
 }
 
 .top-posts-item {
