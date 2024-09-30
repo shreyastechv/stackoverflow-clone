@@ -206,7 +206,7 @@ header {
 }
 
 .collectives-span {
-	margin: auto 20px;
+	margin: auto 14px;
 }
 
 .overflow-ai-small {
@@ -1012,7 +1012,7 @@ footer {
 	}
 
 	.bottom-section {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	.stats-section-large {
@@ -1053,5 +1053,11 @@ footer {
 
 	.community-section-inside {
 		padding-right: calc(100vw - 450px);
+	}
+}
+
+@media (max-width: 640px) {
+	.sidenav {
+		display: none;
 	}
 }
