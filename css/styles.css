@@ -224,6 +224,7 @@ main {
 	flex: 5;
 	overflow-y: auto;
 	margin: 25px;
+	margin-right: 0;
 	align-items: flex-start;
 }
 
@@ -249,16 +250,33 @@ main {
 	margin-bottom: 14px;
 }
 
+.bio-section {
+	padding: 5px;
+}
+
+.bio-section > * {
+	padding-top: 2px;
+}
+
+.bio-section p {
+	color: hsl(211.76deg 7.91% 42.16% / 90%);
+}
+
+.bio-section p i {
+	color: hsl(210,8%,68%);
+}
+
 .username {
 	font-size: 34px;
 	font-weight: normal;
-	margin: 4px;
+	margin-top: 7px;
 	margin-bottom: 12px;
 }
 
 .about-info {
 	font-size: 13px;
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
+	margin-top: 10px;
 }
 
 .top-right {
@@ -810,7 +828,7 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 15px;
-	width: 20%;
+	width: 270px;
 }
 
 .footer-sub div a {
@@ -825,7 +843,7 @@ footer {
 .footer-item {
 	line-height: 1.85;
 	padding: 0 1vw;
-	margin: 0 2vw;
+	margin: 0 1vw;
 }
 
 .footer-item p a {
@@ -893,7 +911,9 @@ footer {
 	color: white;
 	background-color: hsl(237,55%,57%);
 	padding: 4px;
+	padding-left: 6px;
+	margin-left: -10px;
 	border: 3px solid hsl(237,78%,93%);
-	border-radius: 60px;
+	border-radius: 20px;
 	width: 31px;
 }
