@@ -913,3 +913,35 @@ footer {
 	border-radius: 20px;
 	width: 31px;
 }
+
+/*Responsive design*/
+@media (max-width: 980px) {
+
+	.navbar-items-left {
+		width: 20px;
+		justify-content: center;
+		margin: 0 17px 0 25px;
+	}
+
+	.navbar-items-left a:first-child, .navbar-items-left a:last-child {
+		display: none;
+	}
+
+	.profile-sec-1 {
+		flex-direction: column;
+	}
+
+	.profile-picture {
+		width: 100px;
+	}
+
+	.bio-section {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.username {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
