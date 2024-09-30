@@ -221,7 +221,6 @@ main {
 	overflow-y: auto;
 	padding: 25px;
 	margin-right: 0;
-	padding-right: 0;
 }
 
 .top-section {
@@ -457,10 +456,6 @@ main {
 
 .trophy-img {
 	width: 25px;
-}
-
-.bottom-right {
-	max-width: 770px;
 }
 
 .bottom-right > * {
