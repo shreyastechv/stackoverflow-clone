@@ -1077,8 +1077,19 @@ footer {
 		display: flex;
 	}
 
+
 	.footer-item-content > * {
 		margin-right: 9px;
+	}
+
+	.footer-item-content ul {
+		list-style-type: none;
+	}
+
+	.footer-item-content ul > li {
+		display: inline-block;
+		underline: none;
+		color: inherit;
 	}
 
 	.footer-sub {
