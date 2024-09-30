@@ -723,8 +723,14 @@ main {
 	color: hsl(210,8%,42%);
 }
 
-.top-meta-posts-heading-right > * {
-	margin: 0 2px;
+.top-meta-posts-heading-right img {
+	width: 23px;
+	height: 23px;
+	margin: auto 1px;
+}
+
+.top-meta-posts-heading-right p {
+	margin: 9px 1px;
 }
 
 .top-meta-posts-item {
