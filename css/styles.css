@@ -16,7 +16,6 @@ html {
 
 body {
 	display: block;
-	min-height: 100vh;
 	min-height: 100dvh;
 	margin: 0;
 }
@@ -157,20 +156,17 @@ header {
 }
 
 .content {
-	//flex: 1;
-	max-width: 1310px;
+	flex: 1;
 	display: flex;
-	max-width: 1290px;
-	margin: 0 calc(vw - 1280px);
+	padding: 0 calc((100vw - 1280px)/2);
 }
 
 .sidenav {
 	font-size: 13px;
-	width: 212px;
+	width: 164px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 91vh;
-	padding-left: 44px;
 	position: sticky;
 	top: 50px;
 	border-right: 0.008rem solid lightgrey;
@@ -210,7 +206,7 @@ header {
 }
 
 .collectives-span {
-	margin: auto 13px;
+	margin: auto 14px;
 }
 
 .overflow-ai-small {
@@ -219,12 +215,12 @@ header {
 
 main {
 	display: flex;
-	max-width: 1100px;
+	max-width: 1300px;
 	flex-direction: column;
 	flex: 5;
 	overflow-y: auto;
-	margin: 25px;
-	align-items: flex-start;
+	padding: 25px;
+	margin-right: 0;
 }
 
 .top-section {
@@ -249,16 +245,33 @@ main {
 	margin-bottom: 14px;
 }
 
+.bio-section {
+	padding: 5px;
+}
+
+.bio-section > * {
+	padding-top: 2px;
+}
+
+.bio-section p {
+	color: hsl(211.76deg 7.91% 42.16% / 90%);
+}
+
+.bio-section p i {
+	color: hsl(210,8%,68%);
+}
+
 .username {
 	font-size: 34px;
 	font-weight: normal;
-	margin: 4px;
+	margin-top: 7px;
 	margin-bottom: 12px;
 }
 
 .about-info {
 	font-size: 13px;
 	color: hsl(211.76deg 7.91% 42.16% / 90%);
+	margin-top: 10px;
 }
 
 .top-right {
@@ -333,7 +346,7 @@ main {
 }
 
 .bottom-left {
-	width: 245px;
+	min-width: 245px;
 	margin-right: 24px;
 }
 
@@ -345,6 +358,10 @@ main {
 	font-size: 21px;
 	font-weight: normal;
 	margin-bottom: 9px;
+}
+
+.stats-section-large {
+	display: none;
 }
 
 .stats-section-inside {
@@ -414,7 +431,6 @@ main {
 	height: 40px;
 	border: 1px solid hsl(0deg 0% 79.53%);
 	border-radius: 5px;
-	padding: 3px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -442,10 +458,6 @@ main {
 	width: 25px;
 }
 
-.bottom-right {
-	max-width: 770px;
-}
-
 .bottom-right > * {
 	margin-bottom: 18px;
 }
@@ -453,7 +465,6 @@ main {
 .about-section {
 	color: hsl(210,8%,25%);
 	line-height: 25px;
-	//padding: 10px;
 }
 
 .about-section p {
@@ -497,15 +508,30 @@ main {
 
 .badges-content {
 	display: flex;
+	flex-direction: row;
+}
+
+.badges-content-left {
+	display: flex;
+	flex-direction: row;
+	width: 66%;
+	margin-right: 22px;
+}
+
+.badges-content-right {
+	display: flex;
+	flex-direction: row;
+	width: 30%;
 }
 
 .badge-item {
 	padding: 10px;
 	margin-right: 22px;
-	width: 33%;
+	width: 75%;
 }
 
 .badge-item:last-child {
+	width: 105%;
 	margin-right: 0;
 }
 
@@ -527,6 +553,7 @@ main {
 	margin: 8px 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .badge-item-row a {
@@ -696,8 +723,14 @@ main {
 	color: hsl(210,8%,42%);
 }
 
-.top-meta-posts-heading-right > * {
-	margin: 0 2px;
+.top-meta-posts-heading-right img {
+	width: 23px;
+	height: 23px;
+	margin: auto 1px;
+}
+
+.top-meta-posts-heading-right p {
+	margin: 9px 1px;
 }
 
 .top-meta-posts-item {
@@ -799,6 +832,10 @@ footer {
 	margin: 0 calc(vw - 1280px);
 }
 
+.footer-main-main {
+	display: flex;
+}
+
 .footer-main-sub  {
 	display: flex;
 	flex-direction: row;
@@ -810,7 +847,7 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 15px;
-	width: 20%;
+	width: 270px;
 }
 
 .footer-sub div a {
@@ -825,7 +862,7 @@ footer {
 .footer-item {
 	line-height: 1.85;
 	padding: 0 1vw;
-	margin: 0 2vw;
+	margin: 0 1vw;
 }
 
 .footer-item p a {
@@ -893,7 +930,185 @@ footer {
 	color: white;
 	background-color: hsl(237,55%,57%);
 	padding: 4px;
+	padding-left: 6px;
+	margin-left: -10px;
 	border: 3px solid hsl(237,78%,93%);
-	border-radius: 60px;
+	border-radius: 20px;
 	width: 31px;
+}
+
+/*Responsive design*/
+/*Badges section*/
+@media (max-width: 831px) or ((min-width: 980px) and (max-width: 1108px)) {
+	.badges-content {
+		flex-direction: column;
+	}
+
+	.badges-content-left {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-right: 22px;
+	}
+
+	.badges-content-right {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 22px;
+	}
+
+	.badge-item {
+		padding: 10px;
+		margin-right: 22px;
+	}
+
+	.badge-content-right {
+		margin-right: 0;
+	}
+}
+@media (max-width: 420px) {
+	.badges-content {
+		flex-direction: column;
+	}
+
+	.badges-content-left {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.badge-item {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+/*Other sections*/
+@media (max-width: 980px) {
+
+	.navbar-items-left {
+		width: 20px;
+		justify-content: center;
+		margin: 0 17px 0 25px;
+	}
+
+	.navbar-items-left a:first-child, .navbar-items-left a:last-child {
+		display: none;
+	}
+
+	.profile-sec-1 {
+		flex-direction: column;
+	}
+
+	.profile-picture {
+		width: 100px;
+	}
+
+	.bio-section {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.username {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	.bottom-section {
+		flex-direction: column-reverse;
+	}
+
+	.stats-section-large {
+		display: grid;
+	}
+
+	.stats-section-small {
+		display: none;
+	}
+
+	.stats-section-inside, .stat-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+
+	.flex-column {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.stat-row {
+		width: 19%;
+		margin-top: 5px;
+	}
+
+	.trophy-img {
+		width: 15px;
+		height: 15px;
+	}
+
+
+	.bottom-left {
+		margin-right: 0;
+	}
+
+	.community-section-inside {
+		padding-right: calc(100vw - 450px);
+	}
+
+	.footer-main {
+		flex-direction: column;
+	}
+
+	.footer-main-sub  {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.footer-item {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.footer-item-content {
+		display: flex;
+	}
+
+
+	.footer-item-content > * {
+		margin-right: 9px;
+	}
+
+	.footer-item-content ul {
+		list-style-type: none;
+	}
+
+	.footer-item-content ul > li {
+		display: inline-block;
+		underline: none;
+		color: inherit;
+	}
+
+	.footer-sub {
+		width: 100%;
+	}
+
+	.footer-sub > * {
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 792px) {
+	.footer-main-main {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 640px) {
+	.sidenav {
+		display: none;
+	}
 }
