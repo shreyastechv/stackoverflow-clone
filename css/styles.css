@@ -552,6 +552,7 @@ main {
 
 .badges-heading p {
 	font-size: 13px;
+	color: hsl(210,8%,42%);
 }
 
 .badges-content {
@@ -630,6 +631,7 @@ main {
 
 .top-tags-heading p {
 	font-size: 13px;
+	color: hsl(210,8%,42%);
 }
 
 .top-tags-item {
@@ -949,6 +951,10 @@ footer {
 .footer-item-content ul li a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.footer-item-content ul li a:hover {
+	color: white;
 }
 
 .footer-item p a {
