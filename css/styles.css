@@ -293,6 +293,14 @@ main {
 	margin-top: 10px;
 }
 
+.about-info a {
+	text-decoration: none;
+}
+
+.about-info a:visited {
+	color: hsl(237,50%,45%);
+}
+
 .about-icon {
 	font-size: 15px;
 	margin-right: 5px;
