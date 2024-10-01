@@ -105,7 +105,7 @@ header {
 	display: flex;
 	align-items: center;
 	width: 1280px;
-	margin: 0 calc(vw - 1280px);
+	/*margin: 0 calc(vw - 1280px);*/
 }
 
 .nav-links {
@@ -291,8 +291,6 @@ main {
 	margin-right: 5px;
 	margin-left: 2px;
 }
-
-.about-icon:
 
 .top-right {
 	margin-left: auto;
@@ -850,7 +848,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1280px;
-	margin: 0 calc(vw - 1280px);
+	/*margin: 0 calc(vw - 1280px);*/
 }
 
 .footer-main-main {
