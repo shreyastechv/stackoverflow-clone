@@ -283,6 +283,14 @@ main {
 	margin-top: 10px;
 }
 
+.about-icon {
+	font-size: 15px;
+	margin-right: 5px;
+	margin-left: 2px;
+}
+
+.about-icon:
+
 .top-right {
 	margin-left: auto;
 }
@@ -465,7 +473,7 @@ main {
 }
 
 .trophy-img {
-	width: 25px;
+	width: 18px;
 }
 
 .bottom-right > * {
