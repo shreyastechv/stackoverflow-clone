@@ -63,8 +63,15 @@ header {
 
 .navbar-items-left a {
 	font-size: 13px;
-	margin: auto 14px;
+	margin: auto 4px;
 	color: hsl(210,8%,42%);
+	padding: 8px;
+	border-radius: 20px;
+}
+
+.navbar-items-left a:hover {
+	cursor: pointer;
+	background-color: hsl(210,8%,90%);
 }
 
 /*Search Box*/
