@@ -199,6 +199,8 @@ header {
 .sidenav p:nth-child(4) {
 	background-color: hsl(210,8%,95%);
 	padding-right: 0;
+	margin-left: -11px;
+	padding-left: 11px;
 	border-radius: 5px;
 }
 
