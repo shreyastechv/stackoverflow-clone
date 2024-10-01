@@ -1226,6 +1226,10 @@ footer {
 	.stat-row:last-child {
 		display: none;
 	}
+
+	.footer-text {
+		font-size: 11px;
+	}
 }
 
 @media (max-width: 390px) {
