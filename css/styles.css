@@ -235,6 +235,7 @@ main {
 .top-section {
 	display: flex;
 	width: 100%;
+	justify-content: space-between;
 }
 
 .top-left {
