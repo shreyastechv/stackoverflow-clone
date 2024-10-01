@@ -1006,6 +1006,33 @@ footer {
 	}
 }
 
+/*Top Posts Section*/
+@media (max-width: 600px) or ((min-width: 640px) and (max-width: 795px)) or ((min-width: 980px) and (max-width: 1064px)) {
+	.top-posts-heading {
+		flex-direction: column;
+	}
+
+	.top-posts-heading-right {
+		padding-top: 10px;
+		margin-left: 0;
+	}
+
+	.top-posts-heading-right > * {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.top-posts-filter {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.top-posts-heading-left p {
+		font-size: 11px;
+	}
+}
+
 /*Other sections*/
 @media (max-width: 980px) {
 
