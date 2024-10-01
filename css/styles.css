@@ -1216,12 +1216,15 @@ footer {
 	.stat-row:last-child {
 		display: none;
 	}
+}
 
+@media (max-width: 390px) {
+	
 	.top-posts-heading-right {
 		max-width: 100vw;
 	}
 
 	.top-posts-filter {
-		width: 65%;
+		width: 60%;
 	}
 }
