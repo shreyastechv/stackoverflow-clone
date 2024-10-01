@@ -192,6 +192,15 @@ header {
 .sidenav p {
 	padding: 7px 0;
 	align-items: center;
+	padding-right: 0;
+	margin-left: -11px;
+	padding-left: 11px;
+	border-radius: 5px;
+}
+
+.sidenav p:hover {
+	cursor: pointer;
+	background-color: hsl(0deg 0% 96.85%);
 }
 
 .sidenav p a {
@@ -205,10 +214,6 @@ header {
 
 .sidenav p:nth-child(4) {
 	background-color: hsl(210,8%,95%);
-	padding-right: 0;
-	margin-left: -11px;
-	padding-left: 11px;
-	border-radius: 5px;
 }
 
 .sidenav p:nth-child(4), .sidenav p:nth-child(6), .sidenav p:nth-child(9) {
@@ -319,6 +324,10 @@ main {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
+}
+
+.collective-item:hover {
+	cursor: pointer;
 }
 
 .collective-details {
@@ -470,6 +479,11 @@ main {
 	justify-content: space-around;
 }
 
+.profile-toggle:hover {
+	cursor: pointer;
+	background-color: #f7f7f7cf;
+}
+
 .bottom-font {
 	font-size: 13px;
 	color: #666;
@@ -598,6 +612,11 @@ main {
 	background-color: #efefef;
 }
 
+.badge-item-row a:hover {
+	cursor: pointer;
+	background-color: #e5e5e5;
+}
+
 .badge-item-row p {
 	font-size: 11px;
 }
@@ -675,6 +694,10 @@ main {
 	color: hsl(210,77%,46%);
 }
 
+.top-posts-heading-left p a:hover {
+	cursor: pointer;
+}
+
 .top-posts-heading-right {
 	padding: 20px 0 0 0;
 	margin-left: auto;
@@ -687,6 +710,10 @@ main {
 
 .top-posts-heading-right div {
 	align-items: center;
+}
+
+.top-posts-heading-right div div:hover {
+	cursor: pointer;
 }
 
 .top-posts-filter , .top-posts-sort {
@@ -885,8 +912,14 @@ footer {
 }
 
 .footer-sub div a {
+	text-decoration: none;
 	font-size: 11px;
 	margin: 3px;
+	color: inherit;
+}
+
+.footer-sub div a:hover {
+	color: white;
 }
 
 .footer-logo {
@@ -966,6 +999,10 @@ footer {
 .dot {
 	font-size: 6px;
 	margin-right: 3px;
+}
+
+.dot:hover {
+	cursor: pointer;
 }
 
 .gold {
