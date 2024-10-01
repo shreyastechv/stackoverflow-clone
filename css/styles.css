@@ -1153,6 +1153,7 @@ footer {
 
 	.footer-item-content ul > li {
 		display: inline-block;
+		margin-right: 7px;
 	}
 
 	.footer-item-content ul {
