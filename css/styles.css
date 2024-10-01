@@ -170,6 +170,8 @@ header {
 	position: sticky;
 	top: 50px;
 	border-right: 0.008rem solid lightgrey;
+	padding-left: 10px;
+	padding-bottom: 20px;
 }
 
 .sidenav p {
@@ -180,7 +182,6 @@ header {
 .sidenav p a {
 	text-decoration: none;
 	color: hsl(210,8%,25%);
-	padding-left: 10px;
 }
 
 .sidenav p:first-child {
@@ -202,11 +203,11 @@ header {
 }
 
 .spacing {
-	padding-right: 79px;
+       padding-right: 98px;
 }
 
 .collectives-span {
-	margin: auto 14px;
+	margin: auto 26px;
 }
 
 .overflow-ai-small {
@@ -404,10 +405,11 @@ main {
 	text-align: center;
 	font-size: 11px;
 	display: block;
-	padding: 8px;
+	padding: 7px;
 	border: 1px solid transparent;
-	border-radius: 10px;
+	border-radius: 7px;
 	margin-top: 5px;
+	margin-right: 12px;
 }
 
 .orange-btn {
@@ -955,6 +957,7 @@ footer {
 	border-radius: 20px;
 	width: 31px;
 }
+
 
 /*Responsive design*/
 /*Badges section*/
