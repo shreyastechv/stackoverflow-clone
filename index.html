@@ -15,7 +15,9 @@
 			<hr class="top-line">
 			<div class="container">
 				<nav class="primary-nav">
+					<a href="#"><img class="hamburger-menu" src="./assets/images/hamburger-menu.png" alt="Hamburger menu"></a>
 					<a href='/'><img class="logo" src='./assets/images/stackoverflow-header-logo-large.png' alt='logo'></a>
+					<a href='/'><img class="logo-small" src='./assets/images/logo-small.png' alt='logo small'></a>
 					<div class="navbar-items-left">
 						<a>About</a>
 						<a>Products</a>
@@ -51,9 +53,8 @@
 				<p><a href="#"><i class="fa-solid fa-tag"></i> flexbox</a></p>
 				<p><a href="#"><i class="fa-solid fa-tag"></i> overvew</a></p>
 				<p><a href="#"><i class="fa-solid fa-tag"></i> scrollbar</a></p>
-				<p><a href="#">COLLECTIVES<span class="collectives-span"></span><i class="fa-solid fa-plus"></i></a></p>
-				<p>Communities for your favorite technologies.</p>
-				<p><a href="#">Explore all Collectives</a></p>
+				<p><a href="#"><b>COLLECTIVES</b><span class="collectives-span"></span><i class="fa-solid fa-plus"></i></a></p>
+				<p>Communities for your favorite technologies. <a href="#">Explore all Collectives</a></p>
 				<p><b>TEAMS</b></p>
 				<img class="overflow-ai-small" src="./assets/images/overflow-ai.png" alt="Overflow AI Logo">
 				<p><strong>Now available on Stack Overflow for Teams!</strong> AI features where you work: search, IDE, and chat.</p>
@@ -70,7 +71,7 @@
 								<h1 class="username">VonC</h1>
 								<p class="about-info"><i class="fa-solid fa-cake-candles about-icon"></i> Member for 16 years <i class="fa-regular fa-clock about-icon"></i> Last seen this week</p>
 								<p class="about-info">
-								<i class="fa-brands fa-twitter about-icon"></i> <i class="fa-brands fa-github about-icon"></i> <i class="fa-solid fa-link about-icon"></i> devstory.fyi/vonc <i class="fa-solid fa-location-dot about-icon"></i> France</p>
+								<a href="#"><i class="fa-brands fa-twitter about-icon"></i></a> <a href="#"><i class="fa-brands fa-github about-icon"></i></a> <i class="fa-solid fa-link about-icon"></i> <a href="#">devstory.fyi/vonc</a> <i class="fa-solid fa-location-dot about-icon"></i> France</p>
 							</div>
 						</div>
 						<div class="profile-activity-toggle">
@@ -216,11 +217,13 @@
 								<ul>
 									<li><img src="./assets/images/about-1.png" alt="Settings icon"> <a class="about-link about-bold" href="#">System Configuration Management</a> <b>Administrator</b> (<a class="about-link" href="#">ClearCase</a>, <a class="about-link" href="#">SVN</a>, <a class="about-link" href="#">Git</a>), defining various <a href="#" >merge workflows</a> between branches.</li>
 									<li><img src="./assets/images/about-2.png" alt="Development icon"> <a class="about-link about-bold" href="#">Development Architect</a>, which involves:</li>
-									<ul>
-										<li>tools support around <a class="about-link" href="#">java</a> <a class="about-link" href="#">technologies</a>, including <a class="about-link" href="#">eclipse</a>.</li>
-										<li>code quality evaluation, including <a class="about-link" href="#">metrics definitions</a>, and <a class="about-link" href="#">code static tools</a> for <a class="about-link about-bold" href="#">different populations</a>,.</li>
-										<li>code management (<a class="about-link" href="#">Jira</a>, <a class="about-link" href="#">FishEye/Crucible</a>, <a class="about-link" href="#">Maven</a>, <a class="about-link" href="#">Hudson</a>, <a class="about-link" href="#">Sonar</a>)</li>
-									</ul>
+									<li>
+										<ul>
+											<li>tools support around <a class="about-link" href="#">java</a> <a class="about-link" href="#">technologies</a>, including <a class="about-link" href="#">eclipse</a>.</li>
+											<li>code quality evaluation, including <a class="about-link" href="#">metrics definitions</a>, and <a class="about-link" href="#">code static tools</a> for <a class="about-link about-bold" href="#">different populations</a>,.</li>
+											<li>code management (<a class="about-link" href="#">Jira</a>, <a class="about-link" href="#">FishEye/Crucible</a>, <a class="about-link" href="#">Maven</a>, <a class="about-link" href="#">Hudson</a>, <a class="about-link" href="#">Sonar</a>)</li>
+										</ul>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -657,17 +660,21 @@
 						<div class="footer-item">
 							<p class="footer-heading"><a href="#">STACK OVERFLOW</a></p>
 							<div class="footer-item-content">
-								<p class="footer-text"><a href="#">Questions</a></p>
-								<p class="footer-text"><a href="#">Help</a></p>
-								<p class="footer-text"><a href="#">Chat</a></p>
+								<ul>
+									<li class="footer-text"><a href="#">Questions</a></li>
+									<li class="footer-text"><a href="#">Help</a></li>
+									<li class="footer-text"><a href="#">Chat</a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="footer-item">
 							<p class="footer-heading"><a href="#">PRODUCTS</a></p>
 							<div class="footer-item-content">
-								<p class="footer-text"><a href="#">Teams</a></p>
-								<p class="footer-text"><a href="#">Advertising</a></p>
-								<p class="footer-text"><a href="#">Talent</a></p>
+								<ul>
+									<li class="footer-text"><a href="#">Teams</a></li>
+									<li class="footer-text"><a href="#">Advertising</a></li>
+									<li class="footer-text"><a href="#">Talent</a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="footer-item">
@@ -705,11 +712,11 @@
 				</div>
 				<div class="footer-sub">
 					<div>
-						<a>Blog</a>
-						<a>Facebook</a>
-						<a>Twitter</a>
-						<a>LinkedIn</a>
-						<a>Instagram</a>
+						<a href="#">Blog</a>
+						<a href="#">Facebook</a>
+						<a href="#">Twitter</a>
+						<a href="#">LinkedIn</a>
+						<a href="#">Instagram</a>
 					</div>
 					<div>
 						<p class="footer-end">
